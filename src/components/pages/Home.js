@@ -14,7 +14,7 @@ const Home = () => {
     setUser(result.data.reverse());
   };
 
-  const deleteUser = async id => {
+  const deleteUser = async (id) => {
     await axios.delete(`http://localhost:3003/users/${id}`);
     loadUsers();
   };

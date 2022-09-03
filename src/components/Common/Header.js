@@ -5,7 +5,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <Link className="navbar-brand" href="/">
-          Recat
+          Recat User
         </Link>
         <button
           className="navbar-toggler"
@@ -38,10 +38,10 @@ const Header = () => {
             </li>
           </ul>
         </div>
-
+        {/* 
         <Link className="btn btn-outline-light" to="/users/add">
           Add User
-        </Link>
+        </Link> */}
       </div>
     </nav>
   );

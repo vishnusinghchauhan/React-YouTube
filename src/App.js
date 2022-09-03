@@ -5,11 +5,13 @@ import "./App.css";
 import Header from "./components/Common/Header";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
-import Home from "./components/pages/Home";
+// import Home from "./components/pages/Home";
 import NotFound from "./components/pages/NotFound";
 import AddUser from "./components/users/AddUser";
 import EditUser from "./components/users/EditUser";
 import User from "./components/users/User";
+// import ParentComponent from "./components/Concepts/StateProps/ParentComponent";
+import ConditionalRendring from "./components/Concepts/ConditionalRendring/ConditionalRendring";
 
 function App(props) {
   return (
@@ -17,7 +19,7 @@ function App(props) {
       <div className="App">
         <Header />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={ConditionalRendring} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/users/add" component={AddUser} />
